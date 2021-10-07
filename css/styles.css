@@ -1,0 +1,221 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #242424;
+  background-color: #FBF7F4;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+.navigation-list {
+
+}
+.navigation-link-search {
+  background: url('../img/svg/search.svg') no-repeat 0px 0px;
+}
+
+.navigation-link-favorites {
+  background: url('../img/svg/favorites.svg') no-repeat 0px 0px;
+}
+
+.navigation-link-number {
+  font-size: 9px;
+  font-weight: 400;
+  text-shadow: none;
+  color: #eeeeee;
+  background-color: #7DB54F ;
+  padding: 3px;
+  border-radius: 50%;
+}
+.page-header {
+}
+
+.navigation {
+}
+
+.navigation-list {
+  text-decoration: none;
+  list-style: none;
+}
+
+.navigation-link:hover {
+  color: #756257;
+  text-shadow: none;
+}
+.navigation-link:focus {
+  color: #756257;
+  border: 2px solid #756257;
+  text-shadow: none;
+}
+.navigation-link:active {
+  color: #857267;
+  text-shadow: none;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height:26px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: inherit;
+  /* по стилгайду не понятно нужна ли тень
+  text-shadow: #808080 1px 1px;*/
+}
+
+li:nth-child(1) .navigation-link {
+  text-decoration: underline;
+}
+
+.logo-background {
+  width:1200px;
+  height:485px;
+  background: url('../img/sedona-welcome.png') no-repeat  334px 27px
+    ,url('../img/svg/divider.svg') no-repeat 0px 428px
+    ,url('../img/sedona-background.jpg') no-repeat 0px 0px;
+}
+
+.advantages {
+  text-align: center;
+}
+
+.advantages-header {
+  font-size: 30px;
+  line-height:36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-header-description {
+  font-size: 22px;
+  line-height:36px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.advantages-list {
+  color: #ffffff;
+  list-style: none;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height:28px;
+  text-transform: uppercase;
+  color: #000000;
+  background: #83B3D3;
+}
+
+.advantages-description {
+  font-size: 18px;
+  line-height:21px;
+  color: #333333;
+  background: #83B3D3;
+}
+
+li:nth-child(1) .advantages-title
+,li:nth-child(2) .advantages-title
+,li:nth-child(1) .advantages-description
+,li:nth-child(2) .advantages-description {
+  color: #ffffff;
+}
+
+.services-list {
+  list-style: none;
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.services-link {
+  text-decoration: none;
+}
+
+.services-title {
+  font-size: 24px;
+  line-height:28px;
+  color: #000000;
+  text-transform: uppercase;
+
+}
+
+.services-description {
+  font-size: 18px;
+  line-height:21px;
+  color: #333333;
+}
+.search {
+  text-align: center;
+}
+
+.search-header {
+  font-size: 30px;
+  line-height:36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.search-description {
+  font-size: 22px;
+  line-height:26px;
+  color: #000000;
+}
+
+.search-link {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background: #756257;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.subscribe {
+  width: 1200px;
+  height: 411px;
+  background: url('../img/subscribe-background.jpg') no-repeat 0px 0px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.subscribe-header {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.subscribe-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.button-subscribe {
+  font-size: 20px;
+  line-height:26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #83B3D3;
+  border-radius: 10px;
+}
