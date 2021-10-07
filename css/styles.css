@@ -25,9 +25,7 @@ body {
 .visually-hidden {
   visibility: hidden;
 }
-.navigation-list {
 
-}
 .navigation-link-search {
   background: url('../img/svg/search.svg') no-repeat 0px 0px;
 }
@@ -44,11 +42,6 @@ body {
   background-color: #7DB54F ;
   padding: 3px;
   border-radius: 50%;
-}
-.page-header {
-}
-
-.navigation {
 }
 
 .navigation-list {
@@ -80,10 +73,53 @@ body {
   text-shadow: #808080 1px 1px;*/
 }
 
-li:nth-child(1) .navigation-link {
-  text-decoration: underline;
+.footer-social-list {
+  text-decoration: none;
+  list-style: none;
 }
 
+.contacts-phone {
+  font-size: 40px;
+  line-height:40px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.subscribe {
+  width: 1200px;
+  height: 411px;
+  text-align: center;
+  color: #000000;
+}
+
+.subscribe-logo {
+  background: url('../img/subscribe-background.jpg') no-repeat 0px 0px;
+  color: #ffffff;
+}
+
+.subscribe-header {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.subscribe-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.button-subscribe {
+  font-size: 20px;
+  line-height:26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #83B3D3;
+  border-radius: 10px;
+}
+
+/* Основная страница*/
 .logo-background {
   width:1200px;
   height:485px;
@@ -190,32 +226,138 @@ li:nth-child(1) .advantages-title
   border-radius: 10px;
 }
 
-.subscribe {
-  width: 1200px;
-  height: 411px;
-  background: url('../img/subscribe-background.jpg') no-repeat 0px 0px;
+/* Вторая страница - список гостиниц */
+.booking-header {
+  width:1200px;
+  height:408px;
+  background: url('../img/catalog-background.jpg') no-repeat 0px 0px;
   color: #ffffff;
-  text-align: center;
+
 }
 
-.subscribe-header {
-  font-size: 30px;
-  line-height: 36px;
+.booking-title {
+  font-size: 60px;
+  line-height: 78px;
   font-weight: 700;
-  text-transform: uppercase;
+
 }
 
-.subscribe-description {
-  font-size: 22px;
-  line-height: 26px;
+.booking-item {
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+  list-style: none;
 }
 
-.button-subscribe {
+.booking-list {
   font-size: 20px;
-  line-height:26px;
+  line-height: 26px;
+  color: #ffffff;
+  background: #756257;
+}
+
+.booking-filter-item {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.booking-filter-label {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button {
+  font-size: 16px;
+  line-height:21px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.button-submit {
   color: #ffffff;
   background: #83B3D3;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+.button-cancel {
+  font-weight: 400;
+  text-transform: none;
+  color: #ffffff;
+}
+
+.filter-result {
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.select-control {
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+}
+
+
+.hotel-list {
+  list-style: none;
+  color: #333333;
+  background: #ffffff;
+}
+
+.hotel-card-title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.hotel-card-type,.hotel-card-price {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.hotel-card-link {
+  text-decoration: none;
+  color: #ffffff;
+  background: #756257;
+  border-radius: 3px;
+}
+
+.hotel-card-button {
+  color: #ffffff;
+  background: #83B3D3;
+  border-radius: 5px;
+}
+
+.hotel-card-rank {
+  font-size: 16px;
+  line-height: 21px;
+}
+.pagination {
+  list-style: none;
+}
+
+.hotel-view-more,.pagination-link {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background: #83B3D3;
+  border-radius: 5px;
+}
+
+.pagination-current {
+  color: #000000;
+  background: #F2F2F2;
+}
+
+.view-size {
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
 }
