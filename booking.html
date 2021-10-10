@@ -4,42 +4,42 @@
   <meta charset="utf-8">
   <title>Город «Седона»</title>
   <link rel="stylesheet" href="css\styles.css">
+  <style>
+    .subscribe {
+      background: #ffffff;
+      color: #000000;
+    }
+  </style>
 </head>
 <body>
 <header class="page-header">
   <nav class="navigation">
     <ul class="navigation-list">
       <li class="navigation-item">
-        <a class="navigation-link" href="index.html" >Главная</a>
+        <a class="navigation-link" href="index.html">Главная</a>
       </li>
       <li class="navigation-item">
         <a class="navigation-link" href="#">О Седоне</a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link">Гостиницы</a>
+        <a class="navigation-link" href="#">Гостиницы</a>
       </li>
     </ul>
-    <img class="logo" src="img\sedona-logo.png"  width="138" height="70" alt="Логотип города Седона">
+    <img class="logo" src="img\svg\sedona-logo.svg"  width="138" height="70" alt="Логотип города Седона">
     <ul class="navigation-list navigation-user">
       <li class="navigation-item">
-        <a class="navigation-link" href="#">
-          <span class="visually-hidden">
-            Поиск
-          </span>
+        <a class="navigation-link navigation-link-search" href="#">
+          <span class="visually-hidden">Поиск</span>
         </a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link" href="#">
-          <span class="visually-hidden">
-            Избранное
-          </span>
-          <span class="navigation-link-number">
-            12
-          </span>
+        <a class="navigation-link navigation-link-favorites" href="#">
+          <span class="visually-hidden">Избранное</span>
+          <b class="navigation-link-number">12</b>
         </a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link" href="#">Хочу сюда!</a>
+        <a class="navigation-link navigation-link-target" href="#">Хочу сюда!</a>
       </li>
     </ul>
   </nav>
@@ -52,9 +52,7 @@
         <a class="booking-link" href="index.html">
           <img class="booking-link-icon" src="img\svg\nav-home.svg" width="12" height="12" alt="Главная">
         </a>
-      </li>
-      <li class="booking-item">
-          <img class="booking-link-icon" src="img\svg\nav-link.svg" width="5" height="8" alt=">">
+        <img class="booking-link-icon" src="img\svg\nav-link.svg" width="5" height="8" alt=">">
       </li>
       <li class="booking-item">
         <a class="booking-link">Гостиницы</a>
@@ -69,23 +67,20 @@
         <ul class="booking-filter-list">
           <li class="booking-filter-item">
             <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="advantage-pool" checked>
-              <span class="control-mark"></span>
-              <span class="control-label">Бассейн</span>
+              <input class="control-input" type="checkbox" name="advantage-pool" checked>
+              Бассейн
             </label>
           </li>
           <li class="booking-filter-item">
             <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="advantage-parking" checked>
-              <span class="control-mark"></span>
-              <span class="control-label">Парковка</span>
+              <input class="control-input" type="checkbox" name="advantage-parking" checked>
+              Парковка
             </label>
           </li>
           <li class="booking-filter-item">
             <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="advantage-wifi">
-              <span class="control-mark"></span>
-              <span class="control-label">Wi-Fi</span>
+              <input class="control-input" type="checkbox" name="advantage-wifi">
+              Wi-Fi
             </label>
           </li>
         </ul>
@@ -95,23 +90,20 @@
         <ul class="booking-filter-list">
           <li class="booking-filter-item">
             <label class="control">
-              <input class="visually-hidden control-input" type="radio" name="hotel-type" value="hotel" checked>
-              <span class="control-mark"></span>
-              <span class="control-label">Гостиница</span>
+              <input class="control-input" type="radio" name="hotel-type" value="hotel" checked>
+              Гостиница
             </label>
           </li>
           <li class="booking-filter-item">
             <label class="control">
-              <input class="visually-hidden control-input" type="radio" name="hotel-type" value="motel">
-              <span class="control-mark"></span>
-              <span class="control-label">Мотель</span>
+              <input class="control-input" type="radio" name="hotel-type" value="motel">
+              Мотель
             </label>
           </li>
           <li class="booking-filter-item">
             <label class="control">
-              <input class="visually-hidden control-input" type="radio" name="hotel-type" value="apartment">
-              <span class="control-mark"></span>
-              <span class="control-label">Апартаменты</span>
+              <input class="control-input" type="radio" name="hotel-type" value="apartment">
+              Апартаменты
             </label>
           </li>
         </ul>
@@ -142,15 +134,15 @@
         <option value="popular">Сначала популярные</option>
         <option value="expensive">Сначала дорогие</option>
       </select>
-      <button class="view-toggle toggle-grid" type="button">
+      <a class="view-toggle-link" href="#">
         <img class="view-toggle-icon" src="img\svg\mode-tile.svg" width="16" height="14" alt="Вид - сетка.">
-      </button>
-      <button class="view-toggle toggle-tile" type="button">
+      </a>
+      <a class="view-toggle-link" href="#">
         <img class="view-toggle-icon" src="img\svg\mode-slideshow.svg" width="16" height="14" alt="Вид - плитка.">
-      </button>
-      <button class="view-toggle toggle-content" type="button">
+      </a>
+      <a class="view-toggle-link" href="#">
         <img class="view-toggle-icon" src="img\svg\mode-list.svg" width="16" height="14" alt="Вид - содержимое.">
-      </button>
+      </a>
     </form>
     <ul class="hotel-list">
       <li class="hotel-card">
@@ -242,13 +234,13 @@
   </section>
   <section class="subscribe">
     <h2 class="subscribe-header">Подпишитесь на рассылку</h2>
-    <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
     <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
       <label>
-        Подписка на рассылку
-        <input type="email" name="subscribe-email" value="Ваш e-mail">
+        <span class="visually-hidden">Подписка на рассылку</span>
+        <input class="subscribe-input" type="email" name="subscribe-email" value="Ваш e-mail">
       </label>
-      <button class="button" type="submit">Подписаться</button>
+      <button class="button button-subscribe" type="submit">Подписаться</button>
     </form>
   </section>
 </main>
@@ -274,7 +266,7 @@
     </ul>
     <a class="contacts-phone" href="tel:88128121212"><span class="visually-hidden">Телефон для контактов </span>+7 (812) 812-12-12</a>
     <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-      <img class="services-icon" src="img\logo_htmlacademy.png" width="115" height="34" alt=".html academy">
+      <img class="services-icon" src="img\svg\logo_htmlacademy.svg" width="115" height="34" alt=".html academy">
     </a>
   </section>
 </footer>
