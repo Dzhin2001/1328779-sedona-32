@@ -14,7 +14,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -25,6 +33,7 @@ body {
 
 .visually-hidden {
   visibility: hidden;
+  display: none;
 }
 
 .button {
@@ -36,10 +45,35 @@ body {
 
 /* HEADER */
 
+.navigation {
+  display: flex;
+  width: 1200px;
+  padding: 0;
+  justify-content: space-between;
+}
+
 .navigation-list {
+  display: flex;
   text-decoration: none;
   list-style: none;
   background: #ffffff;
+  width: 550px;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start;
+}
+
+.navigation-item {
+  margin-left:  0px;
+  margin: 0 16px;
+}
+
+.navigation-list-user {
+  justify-content: flex-end;
+}
+
+.navigation-item-user {
+  margin: 0 16px;
 }
 
 .navigation-link {
@@ -65,10 +99,12 @@ body {
 
 .navigation-link-search {
   background: url('../img/svg/search.svg') no-repeat 0px 0px;
+  width: 30px;
 }
 
 .navigation-link-favorites {
   background: url('../img/svg/favorites.svg') no-repeat 0px 0px;
+  width: 30px;
 }
 
 .navigation-link-number {
@@ -81,24 +117,43 @@ body {
   border-radius: 50%;
 }
 
+.navigation-item-button {
+  width: 160px;
+  height: 37px;
+  background: #756257;
+  border-radius: 4px;
+  text-align: center;
+}
 .navigation-link-target {
   font-size: 16px;
   line-height:21px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
-  background: #756257;
-  border-radius: 4px;
 }
 
 /* FOOTER */
+.footer-social {
+  width: 1200px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .footer-social-list {
+  display:flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   list-style: none;
 }
 
+.footer-social-item {
+  margin: 0 16px;
+}
 .contacts-phone {
+  width: 720px;
   font-size: 40px;
   line-height:40px;
   font-weight: 400;
@@ -127,7 +182,6 @@ body {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
-  color: #333333;
 }
 
 .subscribe-input {
@@ -155,18 +209,20 @@ body {
 
 /* *** Основная страница *** */
 
-.logo-background {
-  width:1200px;
-  height:485px;
-  background: url('../img/sedona-welcome-1.png') no-repeat  506px 51px
-    ,url('../img/sedona-welcome-2.png') no-repeat  472px 107px
-    ,url('../img/sedona-welcome-3.png') no-repeat  372px 189px
-    ,url('../img/svg/divider.svg') no-repeat 0px 428px
-    ,url('../img/sedona-background.jpg') no-repeat 0px 0px;
+
+.main-index {
+  width: 1200px;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  display:flex;
+  background: url('../img/svg/divider.svg') no-repeat 0px 428px
+  ,url('../img/sedona-background.jpg') no-repeat 0px 0px;
 }
 
 .advantages {
-  text-align: center;
+  display:flex;
+  flex-direction: column;
 }
 
 .advantages-header {
@@ -186,22 +242,22 @@ body {
 }
 
 .advantages-list {
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   list-style-type: none;
-
-}
-/*
-пока не удаляю
   counter-reset: num;
-.advantages-item::before  {
+}
+
+.advantages-description::before {
   content: '— №' counter(num) ' —';
   counter-increment: num;
-  font-size: 18px;
-  line-height:21px;
-  color: #333333;
 }
- */
 
 .advantages-item {
+  width:400px;
   color: #ffffff;
 }
 
@@ -218,35 +274,35 @@ body {
   font-weight: 400;
 }
 
-.advantages-item-1, .advantages-item-2 {
+.advantages-blue-dark {
+  width:1200px;
+  color: #ffffff;
   background: #83B3D3;
 }
 
-.advantages-item-4 {
+.advantages-blue {
   color: #000000;
   background: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-item-3, .advantages-item-5 {
+.advantages-blue-light {
   color: #000000;
   background: rgba(131, 179, 211, 0.12);
 }
 
 .services-list {
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   list-style: none;
   background: #ffffff;
 }
 
 .services-item {
+  width:400px;
   color: #000000;
-}
-
-.services-item-1, .services-item-3 {
-  background: rgba(131, 179, 211, 0.2);
-}
-
-.services-item-2 {
-  background: #ffffff;
 }
 
 .services-title {
@@ -266,7 +322,7 @@ body {
 .services-link {
   text-decoration: none;
   color: inherit;
-  background: inherit;
+  background: none;
 }
 
 .search {
@@ -285,7 +341,7 @@ body {
   font-size: 22px;
   line-height:26px;
   font-weight: 400;
-  color: #000000;
+  color: #333333;
 }
 
 .search-link {
