@@ -58,7 +58,7 @@ body {
   list-style: none;
   background: #ffffff;
   width: 550px;
-  margin: 0;
+  margin: 0 0 0 71px;
   padding: 0;
   justify-content: flex-start;
 }
@@ -70,6 +70,7 @@ body {
 
 .navigation-list-user {
   justify-content: flex-end;
+  margin: 0 71px 0 0;
 }
 
 .navigation-item-user {
@@ -188,7 +189,7 @@ body {
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
-  color: rgb(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
   background-color: #F2F2F2;
   border: none;
   border-radius: 10px;
@@ -209,13 +210,15 @@ body {
 
 /* *** Основная страница *** */
 
-
-.main-index {
+.main-container {
+  display:flex;
   width: 1200px;
   flex-grow: 1;
   flex-direction: column;
   align-items: center;
-  display:flex;
+}
+
+.main-index {
   background: url('../img/svg/divider.svg') no-repeat 0px 428px
   ,url('../img/sedona-background.jpg') no-repeat 0px 0px;
 }
@@ -257,10 +260,22 @@ body {
 }
 
 .advantages-item {
+  display:flex;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
   width:400px;
   color: #ffffff;
 }
 
+
+.advantages-item-description {
+  width:399px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 .advantages-title {
   font-size: 24px;
   line-height:28px;
