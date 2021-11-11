@@ -115,79 +115,118 @@
             <span class="visually-hidden">Изменить максимальную стоимость.</span>
           </button>
         </fieldset>
-        <button class="button button-submit" type="submit">Применить</button>
-        <button class="button button-cancel" type="reset" name="filter_button" value="cancel">Сбросить</button>
+        <div class="booking-button-group">
+          <button class="button button-submit" type="submit">Применить</button>
+          <button class="button button-cancel" type="reset" name="filter_button" value="cancel">Сбросить</button>
+        </div>
       </form>
     </section>
   </div>
   <section class="booking-list">
     <h2 class="visually-hidden">Список гостиниц по заданным фильтрам</h2>
-    <form class="view-type" action="https://echo.htmlacademy.ru/" method="post">
+    <div class="view-type-toggle-list">
       <p class="filter-result">Найдено гостиниц: 38</p>
-      <div class="view-type-toggle-list">
-        <label class="visually-hidden" for="sorting">Сортировка</label>
-        <select class="select-control" id="sorting" name="sorting">
-          <option value="cheap">Сначала дешёвые</option>
-          <option value="popular">Сначала популярные</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
-        <a class="view-toggle-link" href="#">
-          <div class="view-toggle-icon">
-            <img src="img\svg\mode-tile.svg" width="16" height="14" alt="Вид - сетка.">
-          </div>
-        </a>
-        <a class="view-toggle-link" href="#">
-          <div class="view-toggle-icon">
-          <img src="img\svg\mode-slideshow.svg" width="16" height="14" alt="Вид - плитка.">
-          </div>
-        </a>
-        <a class="view-toggle-link" href="#">
-          <div class="view-toggle-icon">
-          <img src="img\svg\mode-list.svg" width="16" height="14" alt="Вид - содержимое.">
-          </div>
-        </a>
-      </div>
-    </form>
+      <a class="view-select-sort">Сначала дешёвые</a>
+      <a class="view-toggle-link" href="#">
+        <div class="view-toggle-icon">
+          <img src="img\svg\mode-tile.svg" width="16" height="14" alt="Вид - сетка.">
+        </div>
+      </a>
+      <a class="view-toggle-link" href="#">
+        <div class="view-toggle-icon">
+        <img src="img\svg\mode-slideshow.svg" width="16" height="14" alt="Вид - плитка.">
+        </div>
+      </a>
+      <a class="view-toggle-link" href="#">
+        <div class="view-toggle-icon">
+        <img src="img\svg\mode-list.svg" width="16" height="14" alt="Вид - содержимое.">
+        </div>
+      </a>
+    </div>
     <ul class="hotel-list">
       <li class="hotel-card">
-        <img class="hotel-card-image" src="img\catalog\hotel-1.jpg"  width="180" height="120" alt="Гостиница Amara Resort & Spa">
-        <h3 class="hotel-card-title">Amara Resort & Spa</h3>
-        <div class="hotel-card-star"><span class="visually-hidden">****</span></div>
-        <span class="hotel-card-type hotel-card-desc-small">Гостиница</span>
-        <span class="hotel-card-price hotel-card-desc-small">От 4000 ₽</span>
-        <a class="button hotel-card-link" href="#">подробнее</a>
-        <button class="button hotel-card-button" type="button">В избранное</button>
-        <span class="hotel-card-rank">Рейтинг: 8,5</span>
+        <a class="hotel-card-image-link">
+          <img class="hotel-card-image" src="img\catalog\hotel-1.jpg"  width="180" height="120" alt="Гостиница Amara Resort & Spa">
+        </a>
+        <div class="hotel-card-group-main">
+          <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+          <div class="hotel-card-group-detail">
+            <span class="hotel-card-type hotel-card-desc-small">Гостиница</span>
+            <span class="hotel-card-price hotel-card-desc-small">От 4000 ₽</span>
+            <a class="button hotel-card-link" href="#">подробнее</a>
+            <button class="button hotel-card-button" type="button">В избранное</button>
+          </div>
+        </div>
+        <div class="hotel-group-rank">
+          <div class="hotel-card-star">
+            <span class="visually-hidden">4 звезды</span>
+            <div class="hotel-card-star-divider" style="width:80%"></div>
+          </div>
+          <span class="hotel-card-rank">Рейтинг: 8,5</span>
+        </div>
       </li>
       <li class="hotel-card">
-        <img class="hotel-card-image" src="img\catalog\hotel-2.jpg"  width="180" height="120" alt="Гостиница Amara Resort & Spa">
-        <h3 class="hotel-card-title">Desert Quail Inn</h3>
-        <div class="hotel-card-star"><span class="visually-hidden">****</span></div>
-        <span class="hotel-card-type hotel-card-desc-small">Мотель</span>
-        <span class="hotel-card-price hotel-card-desc-small">От 3000 ₽</span>
-        <a class="button hotel-card-link" href="#">подробнее</a>
-        <button class="button hotel-card-button" type="button">В избранное</button>
-        <span class="hotel-card-rank">Рейтинг: 8,9</span>
+        <a class="hotel-card-image-link">
+          <img class="hotel-card-image" src="img\catalog\hotel-2.jpg"  width="180" height="120" alt="Гостиница Amara Resort & Spa">
+        </a>
+        <div class="hotel-card-group-main">
+          <h3 class="hotel-card-title">Desert Quail Inn</h3>
+          <div class="hotel-card-group-detail">
+            <span class="hotel-card-type hotel-card-desc-small">Мотель</span>
+            <span class="hotel-card-price hotel-card-desc-small">От 3000 ₽</span>
+            <a class="button hotel-card-link" href="#">подробнее</a>
+            <button class="button hotel-card-button" type="button">В избранное</button>
+          </div>
+        </div>
+        <div class="hotel-group-rank">
+          <div class="hotel-card-star">
+            <span class="visually-hidden">3 звезды</span>
+            <div class="hotel-card-star-divider" style="width:60%"></div>
+          </div>
+          <span class="hotel-card-rank">Рейтинг: 8,9</span>
+        </div>
       </li>
       <li class="hotel-card">
-        <img class="hotel-card-image" src="img\catalog\hotel-3.jpg"  width="180" height="120" alt="Гостиница Amara Resort & Spa">
-        <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
-        <div class="hotel-card-star"><span class="visually-hidden">****</span></div>
-        <span class="hotel-card-type hotel-card-desc-small">Апартаменты</span>
-        <span class="hotel-card-price hotel-card-desc-small">От 2000 ₽</span>
-        <a class="button hotel-card-link" href="#">подробнее</a>
-        <button class="button hotel-card-button" type="button">В избранное</button>
-        <span class="hotel-card-rank">Рейтинг: 9,2</span>
+        <a class="hotel-card-image-link">
+          <img class="hotel-card-image" src="img\catalog\hotel-3.jpg"  width="180" height="120" alt="Гостиница Amara Resort & Spa">
+        </a>
+        <div class="hotel-card-group-main">
+          <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+          <div class="hotel-card-group-detail">
+            <span class="hotel-card-type hotel-card-desc-small">Апартаменты</span>
+            <span class="hotel-card-price hotel-card-desc-small">От 2000 ₽</span>
+            <a class="button hotel-card-link" href="#">подробнее</a>
+            <button class="button hotel-card-button" type="button">В избранное</button>
+          </div>
+        </div>
+        <div class="hotel-group-rank">
+          <div class="hotel-card-star">
+            <span class="visually-hidden">2 звезды</span>
+            <div class="hotel-card-star-divider" style="width:40%"></div>
+          </div>
+          <span class="hotel-card-rank">Рейтинг: 9,2</span>
+        </div>
       </li>
       <li class="hotel-card">
-        <img class="hotel-card-image" src="img\catalog\hotel-4.jpg"  width="180" height="120" alt="Гостиница Amara Resort & Spa">
-        <h3 class="hotel-card-title">GreenTree Inn</h3>
-        <div class="hotel-card-star"><span class="visually-hidden">****</span></div>
-        <span class="hotel-card-type hotel-card-desc-small">Гостиница</span>
-        <span class="hotel-card-price hotel-card-desc-small">От 3000 ₽</span>
-        <a class="button hotel-card-link" href="#">подробнее</a>
-        <button class="button hotel-card-button" type="button">В избранное</button>
-        <span class="hotel-card-rank">Рейтинг: 9,2</span>
+        <a class="hotel-card-image-link">
+          <img class="hotel-card-image" src="img\catalog\hotel-4.jpg"  width="180" height="120" alt="Гостиница Amara Resort & Spa">
+        </a>
+        <div class="hotel-card-group-main">
+          <h3 class="hotel-card-title">GreenTree Inn</h3>
+          <div class="hotel-card-group-detail">
+            <span class="hotel-card-type hotel-card-desc-small">Гостиница</span>
+            <span class="hotel-card-price hotel-card-desc-small">От 3000 ₽</span>
+            <a class="button hotel-card-link" href="#">подробнее</a>
+            <button class="button hotel-card-button" type="button">В избранное</button>
+          </div>
+        </div>
+        <div class="hotel-group-rank">
+          <div class="hotel-card-star">
+            <span class="visually-hidden">2 звезды</span>
+            <div class="hotel-card-star-divider" style="width:40%"></div>
+          </div>
+          <span class="hotel-card-rank">Рейтинг: 9,2</span>
+        </div>
       </li>
     </ul>
     <a class="hotel-view-more pagination-text" href="#">Загрузить еще</a>
