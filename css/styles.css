@@ -1387,7 +1387,7 @@ img {
 
 .hotel-card-star-divider {
   height: 23px;
-  background: #83B3D3 url('../img/svg/star.svg') repeat-x 0 0;
+  background: url('../img/svg/star.svg') repeat-x 0 0;
   margin: 5px auto;
 }
 
