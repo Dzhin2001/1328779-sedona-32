@@ -98,8 +98,11 @@ img {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-
 }
+.logo:hover {
+  opacity: 0.6;
+}
+
 .navigation-list-user {
   justify-content: flex-end;
   padding: 0;
@@ -151,11 +154,7 @@ img {
 }
 .popover-basket:hover,
 .navigation-link-popup:hover + .popover-basket {
-  visibility: visible;
-  opacity: 1;
-  -webkit-user-select: unset;
-  -moz-user-select: unset;
-  user-select: unset;
+  display: block;
 }
 
 .navigation-link-popup::after {
@@ -197,14 +196,7 @@ img {
   background-color: #FFFFFF;
   border-radius: 20px;
   box-shadow: 0px 25px 50px 0px #00000026;
-  display: grid;
-  grid-template-rows: -webkit-min-content 60px;
-  grid-template-rows: min-content 60px;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+  display: none;
 }
 
 .popover-basket::before {
@@ -352,7 +344,7 @@ img {
 
 /* FOOTER */
 .footer-page {
-
+  margin-top: auto;
 }
 
 .footer-social {
@@ -456,7 +448,7 @@ img {
 }
 
 .subscribe-index {
-  background: #756257 url('../img/subscribe-background.jpg') no-repeat 0px 0px;
+  background: #756257 url('../img/subscribe-background.jpg') no-repeat center/cover;
   color: #ffffff;
   padding: 92px 0 50px 0;
 }
@@ -574,7 +566,7 @@ img {
 
 .main-index {
   background: url('../img/svg/divider.svg') no-repeat bottom
-  ,#83B3D3 url('../img/sedona-background.jpg') no-repeat  0 0;
+  ,#83B3D3 url('../img/sedona-background.jpg') no-repeat  center/cover;
   text-align: center;
   padding-top: 51px;
   padding-bottom: 76px;
@@ -641,7 +633,7 @@ img {
   line-height:28px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 98px 0 29px 0;
+  margin: 98px 0 24px 0;
   padding: 0;
   max-width: 400px;
   min-height: 60px;
@@ -667,7 +659,7 @@ img {
 }
 
 .advantages-numerator {
-  margin-bottom: 28px;
+  margin-bottom: 29px;
 }
 
 .advantages-blue-dark {
@@ -804,7 +796,7 @@ img {
 /* Вторая страница - список гостиниц */
 
 .main-inner {
-  background: #756257 url('../img/catalog-background.jpg') no-repeat 0px 0px;
+  background: #756257 url('../img/catalog-background.jpg') no-repeat center/cover;
   color: #ffffff;
   padding: 35px 71px 0 71px;
   box-sizing: border-box;
@@ -854,7 +846,7 @@ img {
 .booking-menu-item:nth-child(1)::after {
   display: inline-block;
   content: "";
-  background: #FFFFFF url('../img/svg/menu-devider-small.svg') no-repeat 40% 50%;
+  background: url('../img/svg/menu-devider-small.svg') no-repeat 40% 50%;
   width: 14px;
   height: 8px;
 }
@@ -1025,7 +1017,7 @@ img {
   font-weight: 400;
   color: #ffffff;
   background: none;
-  padding: 11px 0px 9px 17px;
+  padding: 11px 36px 9px 17px;
   outline: none;
 }
 
@@ -1099,7 +1091,7 @@ img {
 /* Range */
 .range {
   width: 287px;
-  margin-top: 27px;
+  margin-top: 28px;
 }
 .range-scale {
   position: relative;
