@@ -448,7 +448,7 @@ img {
 }
 
 .subscribe-index {
-  background: url('../img/subscribe-background.jpg') no-repeat 0px 0px;
+  background: #756257 url('../img/subscribe-background.jpg') no-repeat 0px 0px;
   color: #ffffff;
   padding: 92px 0 50px 0;
 }
@@ -554,7 +554,7 @@ img {
 
 .main-index {
   background: url('../img/svg/divider.svg') no-repeat bottom
-  ,url('../img/sedona-background.jpg') no-repeat  0 0;
+  ,#83B3D3 url('../img/sedona-background.jpg') no-repeat  0 0;
   text-align: center;
   padding-top: 51px;
   padding-bottom: 76px;
@@ -784,7 +784,7 @@ img {
 /* Вторая страница - список гостиниц */
 
 .main-inner {
-  background: url('../img/catalog-background.jpg') no-repeat 0px 0px;
+  background: #756257 url('../img/catalog-background.jpg') no-repeat 0px 0px;
   color: #ffffff;
   padding: 35px 71px 0 71px;
   box-sizing: border-box;
@@ -834,7 +834,7 @@ img {
 .booking-menu-item:nth-child(1)::after {
   display: inline-block;
   content: "";
-  background: url('../img/svg/menu-devider-small.svg') no-repeat 40% 50%;
+  background: #FFFFFF url('../img/svg/menu-devider-small.svg') no-repeat 40% 50%;
   width: 14px;
   height: 8px;
 }
@@ -1200,7 +1200,7 @@ img {
 }
 
 .view-select-sort {
-  background: url('../img/svg/link-popup-small.svg') no-repeat right 20px center;
+  background: #FFFFFF url('../img/svg/link-popup-small.svg') no-repeat right 20px center;
   display: block;
   box-sizing: border-box;
   min-width: 287px;
@@ -1387,7 +1387,7 @@ img {
 
 .hotel-card-star-divider {
   height: 23px;
-  background: url('../img/svg/star.svg') repeat-x 0 0;
+  background: #83B3D3 url('../img/svg/star.svg') repeat-x 0 0;
   margin: 5px auto;
 }
 
@@ -1490,7 +1490,7 @@ img {
 }
 
 .view-size-link-label {
-  background: url('../img/svg/link-popup-small.svg') no-repeat right 19px center;
+  background: #FFFFFF url('../img/svg/link-popup-small.svg') no-repeat right 19px center;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
