@@ -172,7 +172,7 @@
     <p class="subscribe-description subscribe-description-index">Только полезная информация и никакого спама, честное бойскаутское!</p>
     <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
       <label class="visually-hidden" for="subscribe">Подписка на рассылку</label>
-      <input class="subscribe-input" id="subscribe" type="email" name="subscribe-email" placeholder="Ваш e-mail">
+      <input class="subscribe-input" id="subscribe" type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
       <button class="button button-subscribe" type="submit">Подписаться</button>
     </form>
   </section>
@@ -217,19 +217,20 @@
       <h2 class="modal-title">поиск гостиницы в седоне</h2>
       <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть</span>
-        <svg width="13" height="13" role="img" aria-label="Иконка крест" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/>
+        <svg width="13" height="13" role="img" aria-label="Иконка крест" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/>
         </svg>
       </button>
     </div>
     <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
       <label class="search-label search-label-from" for="search-from">Дата заезда:</label>
       <div class="search-border-from search-input-border">
-        <input class="search-input search-input-date" type="text" id="search-from" name="search-date-from" placeholder="Укажите дату">
+        <input class="search-input search-input-date" type="text" id="search-from" name="search-date-from" placeholder="Укажите дату" required>
         <p class="search-error search-error-from search-error-red">Мы не можем отправить вас в прошлое.</p>
       </div>
       <label class="search-label search-label-to" for="search-to">Дата выезда:</label>
       <div class="search-border-to search-input-border">
-        <input class="search-input search-input-date" type="text" id="search-to" name="search-date-to" placeholder="Укажите дату">
+        <input class="search-input search-input-date" type="text" id="search-to" name="search-date-to" placeholder="Укажите дату" required>
         <p class="search-error search-error-to">На эти даты есть свободные номера. Пока есть.</p>
       </div>
       <label class="search-label search-label-adult" for="search-adult">Взрослые:</label>
@@ -237,13 +238,15 @@
         <div class="search-border-input">
           <button class="button search-number-button search-adult-dec-button" type="button">
             <span class="visually-hidden">минус</span>
-            <svg width="13" height="1" role="img" aria-label="Иконка минус" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L0 1L13 1V0L0 0Z"/>
+            <svg width="13" height="1" role="img" aria-label="Иконка минус" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0L0 1L13 1V0L0 0Z"/>
             </svg>
           </button>
           <input class="search-input search-input-number search-input-adult" type="number" id="search-adult" name="search-adult-for" value="2">
           <button class="button search-number-button search-adult-inc-button" type="button">
             <span class="visually-hidden">плюс</span>
-            <svg width="13" height="13" role="img" aria-label="Иконка плюс" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+            <svg width="13" height="13" role="img" aria-label="Иконка плюс" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
             </svg>
           </button>
         </div>
@@ -262,13 +265,15 @@
         <div class="search-border-input">
           <button class="button search-number-button search-child-dec-button" type="button">
             <span class="visually-hidden">минус</span>
-            <svg width="13" height="1" role="img" aria-label="Иконка минус" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L0 1L13 1V0L0 0Z"/>
+            <svg width="13" height="1" role="img" aria-label="Иконка минус" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0L0 1L13 1V0L0 0Z"/>
             </svg>
           </button>
           <input class="search-input search-input-number search-input-child" type="number" id="search-child" name="search-child-for" value="1">
           <button class="button search-number-button search-child-inc-button" type="button">
             <span class="visually-hidden">плюс</span>
-            <svg width="13" height="13" role="img" aria-label="Иконка плюс" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+            <svg width="13" height="13" role="img" aria-label="Иконка плюс" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
             </svg>
           </button>
         </div>
