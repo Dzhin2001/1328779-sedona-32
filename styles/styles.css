@@ -147,6 +147,16 @@ img {
   border-color:#ffffff;
 }
 
+.navigation-link.active::before {
+  content: "";
+  position: absolute;
+  bottom:-19px;
+  left: 12px;
+  right: 10px;
+  height: 2px;
+  background-color:#756257;
+}
+
 .navigation-link svg{
   fill: currentColor;
 }
@@ -278,6 +288,7 @@ img {
 .basket-button {
   width: 30px;
   height: 30px;
+  padding: 0px;
   background-color: #FFFFFF;
   color: rgba( 0, 0, 0, 0.2);
 }
@@ -299,6 +310,7 @@ img {
 }
 
 .basket-button-view {
+  box-sizing: border-box;
   padding: 0px 8px;
   width: 100%;
   color: #FFFFFF;
