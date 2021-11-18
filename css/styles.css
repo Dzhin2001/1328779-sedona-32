@@ -563,6 +563,9 @@ img {
   outline: none;
 }
 
+.subscribe-input:disabled {
+}
+
 .button-subscribe {
   flex-shrink: 1;
   font-size: 20px;
@@ -1001,6 +1004,11 @@ img {
   background: rgba( 255, 255, 255, 0.3);
 }
 
+.control-input[type="checkbox"]:disabled {
+}
+
+
+
 /* Radio */
 
 .control-input[type="radio"] + .control-mark {
@@ -1028,6 +1036,8 @@ img {
   outline-offset: 0px;
 }
 
+.control-input[type="radio"]:disabled {
+}
 /* ввод цены */
 
 .booking-filter-border-group {
@@ -1099,6 +1109,9 @@ img {
 .booking-filter-input:not(:placeholder-shown) {
   background: #756257;
   outline: none;
+}
+
+.booking-filter-input:disabled {
 }
 
 .booking-filter-label {
@@ -1750,6 +1763,9 @@ img {
   outline: 2px solid #000000;
 }
 
+.search-input-date:disabled {
+}
+
 .search-input-date {
   background: url('../img/svg/calendar.svg') #F2F2F2 no-repeat right 20px center;
   padding: 0 39px 0 19px;
@@ -1801,6 +1817,9 @@ img {
 .search-number-button:active {
   color: rgba( 0, 0, 0, 0.15);
   border: 3px solid transparent;
+}
+
+.search-number-button:disabled {
 }
 
 .search-border-input {
