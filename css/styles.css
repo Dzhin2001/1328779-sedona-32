@@ -564,6 +564,7 @@ img {
 }
 
 .subscribe-input:disabled {
+  pointer-events: none;
 }
 
 .button-subscribe {
@@ -1005,6 +1006,7 @@ img {
 }
 
 .control-input[type="checkbox"]:disabled {
+  pointer-events: none;
 }
 
 
@@ -1037,6 +1039,7 @@ img {
 }
 
 .control-input[type="radio"]:disabled {
+  pointer-events: none;
 }
 /* ввод цены */
 
@@ -1112,6 +1115,7 @@ img {
 }
 
 .booking-filter-input:disabled {
+  pointer-events: none;
 }
 
 .booking-filter-label {
@@ -1764,6 +1768,7 @@ img {
 }
 
 .search-input-date:disabled {
+  pointer-events: none;
 }
 
 .search-input-date {
@@ -1820,6 +1825,7 @@ img {
 }
 
 .search-number-button:disabled {
+  pointer-events: none;
 }
 
 .search-border-input {
